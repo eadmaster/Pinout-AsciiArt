@@ -49,13 +49,13 @@ for k in symbolLib.symbols:
 PN = '74HC595'
 
 footprint = (print_footprint(ret_dict[PN]))
-temp = PN+'\n' + ('='*len(PN))+'\n\n'
-temp += "Description: "+ret_dict[PN]["description"]+'\n'
-temp += "Datasheet: "+ret_dict[PN]["datasheet"]+'\n\n'
-temp += "Pinout: "+'\n'+("-"*8)+'\n\n'+footprint
+temp = '#'+PN+'\n' + ('='*len(PN))+'\n\n'
+temp += "*Description*: "+ret_dict[PN]["description"]+'\n'
+temp += "*Datasheet*: "+ret_dict[PN]["datasheet"]+'\n\n'
+temp += "*Pinout*: "+'\n'+("-"*8)+'\n\n```'+footprint+'\n```'
 
 
 
-f = open('text.txt','w')
+f = open('text.md','w')
 f.write(temp)
 f.close()
