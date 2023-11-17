@@ -1,2 +1,2 @@
 # Pinout-AsciiArt 
-AsciiArt generator of IC Pinouts based on Kicad libraries. 
+AsciiArt generator of IC Pinouts based on Kicad libraries. ff
