@@ -52,7 +52,7 @@ footprint = (print_footprint(ret_dict[PN]))
 temp = '#'+PN+'\n' + ('='*len(PN))+'\n\n'
 temp += "*Description*: "+ret_dict[PN]["description"]+'\n\n'
 temp += "*Datasheet*: "+ret_dict[PN]["datasheet"]+'\n\n'
-temp += "*Pinout*: "+'\n'+'\n\n```'+footprint+'\n```'
+temp += "*Pinout*: "+'\n'+'\n\n```\n'+footprint+'\n```'
 
 
 
